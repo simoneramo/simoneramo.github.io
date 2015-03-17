@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Core Config</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../assets/images/touch/chrome-touch-icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Core CSS">
+    <link rel="apple-touch-icon" href="../assets/images/touch/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../assets/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="theme-color" content="#3372DF">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/main.css">
+  </head>
+  <body class="styleguide">
+    <header class="l-core-header  +u-ta-center">
+      <div></div>
+      <h1 class="+u-fs-h4x  +u-s-mb-1/6">Scss Core</h1>
+      <p class="+u-fs-lead  +u-s-mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+        <ul class="o-nav  --banner">
+          <li><a href="../base" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning">base</a></li>
+          <li><a href="../objects" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning">objects</a></li>
+          <li><a href="../utilities" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning">utilities</a></li>
+          <li><a href="../sink" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning">sink</a></li>
+          <li><a href="../modules" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning">modules</a></li>
+          <li><a href="../config" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning  +u-s-active">config</a></li>
+          <li><a href="../mixins" class="o-btn  --large  +u-r-all  +u-i-m  +u-bc-warning">mixins</a></li>
+        </ul>
+      </p>
+    </header>
+    <div class="l-core-container container">
+      <h1 class="t-core-title +u-fs-h5x">Breakpoint Default Config Variables</h1>
+      <h2 class="t-core-title--sub">Colours Standard Variables</h2>
+      <div class="t-core-config breakpoints">
+        <p><code>$breakpoint-default-feature:    'min-width'     !default;</code></p>
+        <p><code>breakpoint-default-media:      'all'           !default;</code></p>
+        <p><code>breakpoint-force-media-all:    false           !default;</code></p>
+        <p><code>breakpoint-default-pair:       'width'         !default;</code></p>
+        <p><code>breakpoint-to-ems:             false           !default;</code></p>
+        <p><code>breakpoint-prefixes:           'webkit' 'moz'  !default;</code></p>
+        <p><code>breakpoint-prefixed-queries:   'device-pixel-ratio', 'min-device-pixel-ratio', 'max-device-pixel-ratio' !default;</code></p>
+        <p><code>breakpoint-no-queries:         false           !default;</code></p>
+        <p><code>breakpoint-no-query-wrappers:  false           !default;</code></p>
+      </div>
+      <h1 class="t-core-title +u-fs-h5x">Colours Config Variables</h1>
+      <h2 class="t-core-title--sub">Colours Standard Variables</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-white:                   white;     //    #FFFFFF   rgb(100 100 100)</code></p>
+        <p><code>$c-silver:                  silver;    //    #C0C0C0   rgb(75 75 75)</code></p>
+        <p><code>$c-gray:                    gray;      //    #808080   rgb(50 50 50)</code></p>
+        <p><code>$c-black:                   black;     //    #000000   rgb(0 0 0)</code></p>
+        <p><code>$c-red:                     red;       //    #FF0000   rgb(100 0 0)</code></p>
+        <p><code>$c-maroon:                  maroon;    //    #800000   rgb(50 0 0)</code></p>
+        <p><code>$c-orange:                  orange;    //    #FFA500   rgb(255 16 50)</code></p>
+        <p><code>$c-yellow:                  yellow;    //    #FFFF00   rgb(100 100 0)</code></p>
+        <p><code>$c-olive:                   olive;     //    #808000   rgb(50 50 0)</code></p>
+        <p><code>$c-lime:                    lime;      //    #00FF00   rgb(0 100 0)</code></p>
+        <p><code>$c-green:                   green;     //    #008000   rgb(0 50 0)</code></p>
+        <p><code>$c-aqua:                    aqua;      //    #00FFFF   rgb(0 100 100)</code></p>
+        <p><code>$c-teal:                    teal;      //    #008080   rgb(0 50 50)</code></p>
+        <p><code>$c-blue:                    blue;      //    #0000FF   rgb(0 0 100)</code></p>
+        <p><code>$c-navy:                    navy;      //    #000080   rgb(0 0 50)</code></p>
+        <p><code>$c-fuchsia:                 fuchsia;   //    #FF00FF   rgb(100 0 100)</code></p>
+        <p><code>$c-purple:                  purple;    //    #800080   rgb(50 0 50)</code></p>
+        <p><code>$c-pink:                    pink;      //    #FFC0CB   rgb(255 192 203)</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colours Background Variables</h2>
+      <div class="t-core-config colours">
+        <p><code>$bc-1:                    #ffffff;</code></p>
+        <p><code>$bc-2:                    #f3f3f3;</code></p>
+        <p><code>$bc-3:                    #ccc;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Selection Colour Variables</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-selection:             #161616;</code></p>
+        <p><code>$bc-selection:            rgba(240, 233, 89, 0.9);</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Link Colour Variables</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-link:                  #2046df;</code></p>
+        <p><code>$c-link-hover:            #ec1831;</code></p>
+        <p><code>$c-link-active:           #ff001e;</code></p>
+        <p><code>$c-link-visited:          #d01fe0;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Heading Colour Variables</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-heading-1:             #2c2c2c;</code></p>
+        <p><code>$c-heading-2:             #424242;</code></p>
+        <p><code>$c-heading-3:             #585858;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Type Colour Variables</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-type-1:                #2c2c2c;</code></p>
+        <p><code>$c-type-2:                #424242;</code></p>
+        <p><code>$c-type-3:                #585858;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colours object</h2>
+      <div class="t-core-config colours"> 
+        <p><code>$c-object:                #bebebe;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colour Object Buttons Variables</h2>
+      <div class="t-core-config colours"> 
+        <p><code>$c-btn-1:                 #222222;</code></p>
+        <p><code>$c-btn-2:                 #aeaeae;</code></p>
+        <p><code>$bc-btn-1:                #bebebe;</code></p>
+        <p><code>$bc-btn-2:                #a6a6a6;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colours object notify</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-success:               #4FC56B;</code></p>
+        <p><code>$c-info:                  #59A7F2;</code></p>
+        <p><code>$c-warning:               #FADB40;</code></p>
+        <p><code>$c-danger:                #F58E45;</code></p>
+        <p><code>$c-error:                 #F45757;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colours object form</h2>
+      <div class="t-core-config colours">
+        <p><code>$c-form-1:                #999999;</code></p>
+        <p><code>$c-form-2:                #777777;</code></p>
+        <p><code>$c-form-input:            #bebebe;</code></p>
+        <p><code>$c-form-hover:            $c-link-hover;</code></p>
+        <p><code>$c-form-active:           $c-link-active;</code></p>
+        <p><code>$c-form-focus:            $c-link-visited;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colours object code </h2>
+      <div class="t-core-config colours">
+        <p><code>$bc-code:                #f7f7f7;</code></p>
+        <p><code>$c-code:                  #333333;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Colours brands </h2>
+      <div class="t-core-config colours">
+        <p><code>$c-google:                #1194f6;</code></p>
+        <p><code>$c-facebook:              #336699;</code></p>
+        <p><code>$c-twitter:               #00aced;</code></p>
+        <p><code>$c-linkedin:              #0977b5;</code></p>
+        <p><code>$c-dribble:               #ea4c89;</code></p>
+        <p><code>$c-instagram:             #336699;</code></p>
+        <p><code>$c-googleplus:            #c20907;</code></p>
+        <p><code>$c-behance:               #333333;</code></p>
+        <p><code>$c-gimmebar:              #D6156C;</code></p>
+        <p><code>$c-github:                #333333;</code></p>
+        <p><code>$c-tumblr:                #35465d;</code></p>
+        <p><code>$c-youtube:               #e52d27;</code></p>
+        <p><code>$c-vine:                  #00bf8f;</code></p>
+        <p><code>$c-vimeo:                 #04aeec;</code></p>
+        <p><code>$c-kickstarter:           #14e06e;</code></p>
+        <p><code>$c-dropbox:               #007ee5;</code></p>
+        <p><code>$c-flickr:                #f4f4f4;</code></p>
+        <p><code>$c-rss:                   #eb7f38;</code></p>
+        <p><code>$c-codepen:               #d75e5e;</code></p>
+        <p><code>$c-foursquare:            #f94877;</code></p>
+        <p><code>$c-soundcloud:            #f83c0e;</code></p>
+        <p><code>$c-wordpress:             #464646;</code></p>
+        <p><code>$c-blogger:               #f57d00;</code></p>
+        <p><code>$c-squarespace:           #222222;</code></p>
+        <p><code>$c-joomla:                #5e5e5e;</code></p>
+        <p><code>$c-drupal:                #0077c0;</code></p>
+        <p><code>$c-typepad:               #629841;</code></p>
+        <p><code>$c-expression-engine:     #5c81a5;</code></p>
+        <p><code>$c-kirby:                 #ff0400;</code></p>
+        <p><code>$c-moveabletype:          #9cbaca;</code></p>
+        <p><code>$c-disqus:                #2e9fff;</code></p>
+        <p><code>$c-html:                  #ed3e35;</code></p>
+        <p><code>$c-yahoo:                 #400191;</code></p>
+        <p><code>$c-pinterest:             #cc3333;</code></p>
+        <p><code>$c-google-drive:          #333333;</code></p>
+        <p><code>$c-delicious:             #0B79E5;</code></p>
+        <p><code>$c-android:               #a4c639;</code></p>
+        <p><code>$c-apple:                 #cccccc;</code></p>
+        <p><code>$c-forrst:                #5b9a68;</code></p>
+        <p><code>$c-paypal:                #00437f;</code></p>
+        <p><code>$c-lastfm:                #c3000d;</code></p>
+        <p><code>$c-skype:                 #009fe3;</code></p>
+        <p><code>$c-digg:                  #333333;</code></p>
+        <p><code>$c-swarm:                 #ffb000;</code></p>
+        <p><code>$c-etsy:                  #ffb000;</code></p>
+      </div>
+      <h1 class="styleguide-title +u-fs-h5x">Extends Config</h1>
+      <h2 class="styleguide-title--sub">Extend</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-d-block                { display:block; }</code></p>
+        <p><code>%e-d-inline               { display:inline; }</code></p>
+        <p><code>%e-d-inline-block         { display:inline-block; }</code></p>
+        <p><code>%e-d-table                { display:table; }</code></p>
+        <p><code>%e-d-table-cell           { display:table-cell; }</code></p>
+        <p><code>%e-d-flex                 { display:flex; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">Alert Colours</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-bc-success             { background-color: $c-success; }</code></p>
+        <p><code>%e-bc-info                { background-color: $c-info; }</code></p>
+        <p><code>%e-bc-warning             { background-color: $c-warning; }</code></p>
+        <p><code>%e-bc-danger              { background-color: $c-danger; }</code></p>
+        <p><code>%e-bc-error               { background-color: $c-error; }</code></p>
+        <p><code>%e-c-success              { color: $c-success; }</code></p>
+        <p><code>%e-c-info                 { color: $c-info; }</code></p>
+        <p><code>%e-c-warning              { color: $c-warning; }</code></p>
+        <p><code>%e-c-danger               { color: $c-danger; }</code></p>
+        <p><code>%e-c-error                { color: $c-error; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">headings sizes</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-fs-h1                  { font-size: $fs-h1; }</code></p>
+        <p><code>%e-fs-h2                  { font-size: $fs-h2; }</code></p>
+        <p><code>%e-fs-h3                  { font-size: $fs-h3; }</code></p>
+        <p><code>%e-fs-h4                  { font-size: $fs-h4; }</code></p>
+        <p><code>%e-fs-h5                  { font-size: $fs-h5; }</code></p>
+        <p><code>%e-fs-h6                  { font-size: $fs-h6; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">large type sizes</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-fs-h1x                 { font-size: $fs-h1x; }</code></p>
+        <p><code>%e-fs-h2x                 { font-size: $fs-h2x; }</code></p>
+        <p><code>%e-fs-h3x                 { font-size: $fs-h3x; }</code></p>
+        <p><code>%e-fs-h4x                 { font-size: $fs-h4x; }</code></p>
+        <p><code>%e-fs-h5x                 { font-size: $fs-h5x; }</code></p>
+        <p><code>%e-fs-h6x                 { font-size: $fs-h6x; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">small type sizes</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-fs-h7                  { font-size: $fs-h7; }</code></p>
+        <p><code>%e-fs-h8                  { font-size: $fs-h8; }</code></p>
+        <p><code>%e-fs-h9                  { font-size: $fs-h9; }</code></p>
+        <p><code>%e-fs-h10                 { font-size: $fs-h10; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">helper sizes & inherit</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-fs-base                { font-size: $fs-base; }</code></p>
+        <p><code>%e-fs-lead                { font-size: $fs-lead; }</code></p>
+        <p><code>%e-fs-half                { font-size: $fs-half; }</code></p>
+        <p><code>%e-fs-inherit             { font-size: inherit; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">font weights</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-font-200               { font-weight: 200; }</code></p>
+        <p><code>%e-font-300               { font-weight: 300; }</code></p>
+        <p><code>%e-font-400               { font-weight: 400; }</code></p>
+        <p><code>%e-font-500               { font-weight: 500; }</code></p>
+        <p><code>%e-font-600               { font-weight: 600; }</code></p>
+        <p><code>%e-font-700               { font-weight: 700; }</code></p>
+        <p><code>%e-font-800               { font-weight: 800; }</code></p>
+        <p><code>%e-font-900               { font-weight: 900; }</code></p>
+        <p><code>%e-fw-normal              { font-weight: normal; }</code></p>
+        <p><code>%e-fw-bold                { font-weight: bold; }</code></p>
+        <p><code>%e-fw-lighter             { font-weight: lighter; }</code></p>
+        <p><code>%e-fw-bolder              { font-weight: bolder; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">font styles</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-fs-normal              { font-style: normal; }</code></p>
+        <p><code>%e-fs-italic              { font-style: italic; }</code></p>
+        <p><code>%e-fs-oblique             { font-style: oblique; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">text underline</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-td-underline           { text-decoration: underline; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">text transforms</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-tt-lower               { text-transform: lowercase; }</code></p>
+        <p><code>%e-tt-upper               { text-transform: uppercase; }</code></p>
+        <p><code>%e-tt-caps                { text-transform: capitalize; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">text align</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-ta-left                { text-align: left; }</code></p>
+        <p><code>%e-ta-right               { text-align: right; }</code></p>
+        <p><code>%e-ta-cener               { text-align: center; }</code></p>
+        <p><code>%e-ta-justify             { text-align: justify; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">nowrap</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-ws-nowrap              { white-space: nowrap; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">floats</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-f-left                 { float: left; }</code></p>
+        <p><code>%e-f-right                { float: right; }</code></p>
+        <p><code>%e-f-inherit              { float: inherit; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">overflow</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-of-hidden              { overflow: hidden; }</code></p>
+        <p><code>%e-of-scroll              { overflow: scroll; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">position</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-p-relative             { position: relative; }</code></p>
+        <p><code>%e-p-absolute             { position: absolute; }</code></p>
+        <p><code>%e-p-fixed                { position: fixed; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">positions where</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-p-t-0                  { top: 0; }</code></p>
+        <p><code>%e-p-r-0                  { right: 0; }</code></p>
+        <p><code>%e-p-b-0                  { bottom: 0; }</code></p>
+        <p><code>%e-p-l-0                  { left: 0; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">z-index</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-z-1                    { z-index: 1; }</code></p>
+        <p><code>%e-z-2                    { z-index: 2; }</code></p>
+        <p><code>%e-z-3                    { z-index: 3; }</code></p>
+        <p><code>%e-z-4                    { z-index: 4; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-1\/6              { margin-top: $space-6th!important; }</code></p>
+        <p><code>%e-s-mr-1\/6              { margin-right: $space-6th!important; }</code></p>
+        <p><code>%e-s-mb-1\/6              { margin-bottom: $space-6th!important; }</code></p>
+        <p><code>%e-s-ml-1\/6              { margin-left: $space-6th!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-1\/5              { margin-top: $space-5th!important; }</code></p>
+        <p><code>%e-s-mr-1\/5              { margin-right: $space-5th!important; }</code></p>
+        <p><code>%e-s-mb-1\/5              { margin-bottom: $space-5th!important; }</code></p>
+        <p><code>%e-s-ml-1\/5              { margin-left: $space-5th!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-1\/4              { margin-top: $space-4th!important; }</code></p>
+        <p><code>%e-s-mr-1\/4              { margin-right: $space-4th!important; }</code></p>
+        <p><code>%e-s-mb-1\/4              { margin-bottom: $space-4th!important; }</code></p>
+        <p><code>%e-s-ml-1\/4              { margin-left: $space-4th!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-1\/3              { margin-top: $space-3rd!important; }</code></p>
+        <p><code>%e-s-mr-1\/3              { margin-right: $space-3rd!important; }</code></p>
+        <p><code>%e-s-mb-1\/3              { margin-bottom: $space-3rd!important; }</code></p>
+        <p><code>%e-s-ml-1\/3              { margin-left: $space-3rd!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-1\/2              { margin-top: $space-half!important; }</code></p>
+        <p><code>%e-s-mr-1\/2              { margin-right: $space-half!important; }</code></p>
+        <p><code>%e-s-mb-1\/2              { margin-bottom: $space-half!important; }</code></p>
+        <p><code>%e-s-ml-1\/2              { margin-left: $space-half!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt                   { margin-top: $space!important; }</code></p>
+        <p><code>%e-s-mr                   { margin-right: $space!important; }</code></p>
+        <p><code>%e-s-mb                   { margin-bottom: $space!important; }</code></p>
+        <p><code>%e-s-ml                   { margin-left: $space!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-1-1\/2            { margin-top: $space-1-half!important; }</code></p>
+        <p><code>%e-s-mr-1-1\/2            { margin-right: $space-1-half!important; }</code></p>
+        <p><code>%e-s-mb-1-1\/2            { margin-bottom: $space-1-half!important; }</code></p>
+        <p><code>%e-s-ml-1-1\/2            { margin-left: $space-1-half!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-2                 { margin-top: $space-2!important; }</code></p>
+        <p><code>%e-s-mr-2                 { margin-right: $space-2!important; }</code></p>
+        <p><code>%e-s-mb-2                 { margin-bottom: $space-2!important; }</code></p>
+        <p><code>%e-s-ml-2                 { margin-left: $space-2!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-3                 { margin-top: $space-3!important; }</code></p>
+        <p><code>%e-s-mr-3                 { margin-right: $space-3!important; }</code></p>
+        <p><code>%e-s-mb-3                 { margin-bottom: $space-3!important; }</code></p>
+        <p><code>%e-s-ml-3                 { margin-left: $space-3!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-4                 { margin-top: $space-4!important; }</code></p>
+        <p><code>%e-s-mr-4                 { margin-right: $space-4!important; }</code></p>
+        <p><code>%e-s-mb-4                 { margin-bottom: $space-4!important; }</code></p>
+        <p><code>%e-s-ml-4                 { margin-left: $space-4!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-5                 { margin-top: $space-5!important; }</code></p>
+        <p><code>%e-s-mr-5                 { margin-right: $space-5!important; }</code></p>
+        <p><code>%e-s-mb-5                 { margin-bottom: $space-5!important; }</code></p>
+        <p><code>%e-s-ml-5                 { margin-left: $space-5!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-mt-6                 { margin-top: $space-6!important; }</code></p>
+        <p><code>%e-s-mr-6                 { margin-right: $space-6!important; }</code></p>
+        <p><code>%e-s-mb-6                 { margin-bottom: $space-6!important; }</code></p>
+        <p><code>%e-s-ml-6                 { margin-left: $space-6!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-1\/6              { padding-top: $space-6th!important; }</code></p>
+        <p><code>%e-s-pr-1\/6              { padding-right: $space-6th!important; }</code></p>
+        <p><code>%e-s-pb-1\/6              { padding-bottom: $space-6th!important; }</code></p>
+        <p><code>%e-s-pl-1\/6              { padding-left: $space-6th!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-1\/5              { padding-top: $space-5th!important; }</code></p>
+        <p><code>%e-s-pr-1\/5              { padding-right: $space-5th!important; }</code></p>
+        <p><code>%e-s-pb-1\/5              { padding-bottom: $space-5th!important; }</code></p>
+        <p><code>%e-s-pl-1\/5              { padding-left: $space-5th!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-1\/4              { padding-top: $space-4th!important; }</code></p>
+        <p><code>%e-s-pr-1\/4              { padding-right: $space-4th!important; }</code></p>
+        <p><code>%e-s-pb-1\/4              { padding-bottom: $space-4th!important; }</code></p>
+        <p><code>%e-s-pl-1\/4              { padding-left: $space-4th!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-1\/3              { padding-top: $space-3rd!important; }</code></p>
+        <p><code>%e-s-pr-1\/3              { padding-right: $space-3rd!important; }</code></p>
+        <p><code>%e-s-pb-1\/3              { padding-bottom: $space-3rd!important; }</code></p>
+        <p><code>%e-s-pl-1\/3              { padding-left: $space-3rd!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-1\/2              { padding-top: $space-half!important; }</code></p>
+        <p><code>%e-s-pr-1\/2              { padding-right: $space-half!important; }</code></p>
+        <p><code>%e-s-pb-1\/2              { padding-bottom: $space-half!important; }</code></p>
+        <p><code>%e-s-pl-1\/2              { padding-left: $space-half!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt                   { padding-top: $space!important; }</code></p>
+        <p><code>%e-s-pr                   { padding-right: $space!important; }</code></p>
+        <p><code>%e-s-pb                   { padding-bottom: $space!important; }</code></p>
+        <p><code>%e-s-pl                   { padding-left: $space!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-1-1\/2            { padding-top: $space-1-half!important; }</code></p>
+        <p><code>%e-s-pr-1-1\/2            { padding-right: $space-1-half!important; }</code></p>
+        <p><code>%e-s-pb-1-1\/2            { padding-bottom: $space-1-half!important; }</code></p>
+        <p><code>%e-s-pl-1-1\/2            { padding-left: $space-1-half!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-2                 { padding-top: $space-2!important; }</code></p>
+        <p><code>%e-s-pr-2                 { padding-right: $space-2!important; }</code></p>
+        <p><code>%e-s-pb-2                 { padding-bottom: $space-2!important; }</code></p>
+        <p><code>%e-s-pl-2                 { padding-left: $space-2!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-3                 { padding-top: $space-3!important; }</code></p>
+        <p><code>%e-s-pr-3                 { padding-right: $space-3!important; }</code></p>
+        <p><code>%e-s-pb-3                 { padding-bottom: $space-3!important; }</code></p>
+        <p><code>%e-s-pl-3                 { padding-left: $space-3!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-4                 { padding-top: $space-4!important; }</code></p>
+        <p><code>%e-s-pr-4                 { padding-right: $space-4!important; }</code></p>
+        <p><code>%e-s-pb-4                 { padding-bottom: $space-4!important; }</code></p>
+        <p><code>%e-s-pl-4                 { padding-left: $space-4!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-5                 { padding-top: $space-5!important; }</code></p>
+        <p><code>%e-s-pr-5                 { padding-right: $space-5!important; }</code></p>
+        <p><code>%e-s-pb-5                 { padding-bottom: $space-5!important; }</code></p>
+        <p><code>%e-s-pl-5                 { padding-left: $space-5!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">spaces padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-pt-6                 { padding-top: $space-6!important; }</code></p>
+        <p><code>%e-s-pr-6                 { padding-right: $space-6!important; }</code></p>
+        <p><code>%e-s-pb-6                 { padding-bottom: $space-6!important; }</code></p>
+        <p><code>%e-s-pl-6                 { padding-left: $space-6!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">widths</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-w-0                    { width: 0%; }</code></p>
+        <p><code>%e-w-1\/2                 { width: 50%; }</code></p>
+        <p><code>%e-w-1\/1                 { width: 100%; }</code></p>
+        <p><code>%e-w-1\/3                 { width: 33.333%; }</code></p>
+        <p><code>%e-w-2\/3                 { width: 66.666%; }</code></p>
+        <p><code>%e-w-1\/4                 { width: 25%; }</code></p>
+        <p><code>%e-w-2\/4                 { @extend %e-w-1\/2; }</code></p>
+        <p><code>%e-w-3\/4                 { width: 75%; }</code></p>
+        <p><code>%e-w-1\/5                 { width: 20%; }</code></p>
+        <p><code>%e-w-2\/5                 { width: 40%; }</code></p>
+        <p><code>%e-w-3\/5                 { width: 60%; }</code></p>
+        <p><code>%e-w-4\/5                 { width: 80%; }</code></p>
+        <p><code>%e-w-1\/6                 { width: 16.666%; }</code></p>
+        <p><code>%e-w-2\/6                 { @extend %e-w-1\/3; }</code></p>
+        <p><code>%e-w-3\/6                 { @extend %e-w-1\/2; }</code></p>
+        <p><code>%e-w-4\/6                 { @extend %e-w-2\/3; }</code></p>
+        <p><code>%e-w-5\/6                 { width: 83.333%; }</code></p>
+        <p><code>%e-w-1\/8                 { width: 12.5%; }</code></p>
+        <p><code>%e-w-2\/8                 { @extend %e-w-1\/4; }</code></p>
+        <p><code>%e-w-3\/8                 { width: 37.5%; }</code></p>
+        <p><code>%e-w-4\/8                 { @extend %e-w-1\/2; }</code></p>
+        <p><code>%e-w-5\/8                 { width: 62.5%; }</code></p>
+        <p><code>%e-w-6\/8                 { @extend %e-w-3\/4; }</code></p>
+        <p><code>%e-w-7\/8                 {  width: 87.5%; }</code></p>
+        <p><code>%e-w-1\/10                { width: 10%; }</code></p>
+        <p><code>%e-w-2\/10                { @extend %e-w-1\/5; }</code></p>
+        <p><code>%e-w-3\/10                { width: 30%; }</code></p>
+        <p><code>%e-w-4\/10                { @extend %e-w-2\/5; }</code></p>
+        <p><code>%e-w-5\/10                { @extend %e-w-1\/2; }</code></p>
+        <p><code>%e-w-6\/10                { @extend %e-w-3\/5; }</code></p>
+        <p><code>%e-w-7\/10                { width: 70%; }</code></p>
+        <p><code>%e-w-8\/10                { @extend %e-w-4\/5; }</code></p>
+        <p><code>%e-w-9\/10                { width: 90%; }</code></p>
+        <p><code>%e-w-1\/12                { width: 8.333%; }</code></p>
+        <p><code>%e-w-2\/12                { @extend %e-w-1\/6; }</code></p>
+        <p><code>%e-w-3\/12                { @extend %e-w-1\/4; }</code></p>
+        <p><code>%e-w-4\/12                { @extend %e-w-1\/3; }</code></p>
+        <p><code>%e-w-5\/12                { width: 41.666% }</code></p>
+        <p><code>%e-w-6\/12                { @extend %e-w-1\/2; }</code></p>
+        <p><code>%e-w-7\/12                { width: 58.333%; }</code></p>
+        <p><code>%e-w-8\/12                { @extend %e-w-2\/3; }</code></p>
+        <p><code>%e-w-9\/12                { @extend %e-w-3\/4; }</code></p>
+        <p><code>%e-w-10\/12               { @extend %e-w-5\/6; }</code></p>
+        <p><code>%e-w-11\/12               { width: 91.666%; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">island margin</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-i-m-1\/6               { margin: $space-6th!important; }</code></p>
+        <p><code>%e-i-m-1\/5               { margin: $space-5th!important; }</code></p>
+        <p><code>%e-i-m-1\/4               { margin: $space-4th!important; }</code></p>
+        <p><code>%e-i-m-1\/3               { margin: $space-3rd!important; }</code></p>
+        <p><code>%e-i-m-1\/2               { margin: $space-half!important; }</code></p>
+        <p><code>%e-i-m                    { margin: $space!important; }</code></p>
+        <p><code>%e-i-m-1-1\/2             { margin: $space-1-half!important; }</code></p>
+        <p><code>%e-i-m-2                  { margin: $space-2!important; }</code></p>
+        <p><code>%e-i-m-3                  { margin: $space-3!important; }</code></p>
+        <p><code>%e-i-m-4                  { margin: $space-4!important; }</code></p>
+        <p><code>%e-i-m-5                  { margin: $space-5!important; }</code></p>
+        <p><code>%e-i-m-6                  { margin: $space-6!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">island padding</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-i-p-1\/6               { padding: $space-6th!important; }</code></p>
+        <p><code>%e-i-p-1\/5               { padding: $space-5th!important; }</code></p>
+        <p><code>%e-i-p-1\/4               { padding: $space-4th!important; }</code></p>
+        <p><code>%e-i-p-1\/3               { padding: $space-3rd!important; }</code></p>
+        <p><code>%e-i-p-1\/2               { padding: $space-half!important; }</code></p>
+        <p><code>%e-i-p                    { padding: $space!important; }</code></p>
+        <p><code>%e-i-p-1-1\/2             { padding: $space-1-half!important; }</code></p>
+        <p><code>%e-i-p-2                  { padding: $space-2!important; }</code></p>
+        <p><code>%e-i-p-3                  { padding: $space-3!important; }</code></p>
+        <p><code>%e-i-p-4                  { padding: $space-4!important; }</code></p>
+        <p><code>%e-i-p-5                  { padding: $space-5!important; }</code></p>
+        <p><code>%e-i-p-6                  { padding: $space-6!important; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">mixins as extends</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-m-hidden               { @include hidden; }</code></p>
+        <p><code>%e-m-clearfix             { @include cf; }</code></p>
+        <p><code>%e-m-visually-hidden      { @include visually-hidden; }</code></p>
+        <p><code>%e-m-sr-only              { @include sr-only; }</code></p>
+        <p><code>%e-m-unstyled             { @include unstyled; }</code></p>
+        <p><code>%e-m-ir                   { @include ir; }</code></p>
+        <p><code>%e-m-cc                   { @include cc; }</code></p>
+        <p><code>%e-m-invisible            { @include invisible; }</code></p>
+        <p><code>%e-m-va-container         { transform-style: preserve-3d; }</code></p>
+        <p><code>%e-m-vertical-align       { @include vertical-align; }</code></p>
+        <p><code>%e-m-vertical-align-table { @include vertical-align-table; }</code></p>
+        <p><code>%e-m-global-margin-bottom { @include mb; }</code></p>
+        <p><code>%e-m-link-block           { @include link-block-space; }</code></p>
+      </div>
+      <h2 class="styleguide-title--sub">states helpers</h2>
+      <div class="t-core-config extends">
+        <p><code>%e-s-inform</code></p>
+        <p><code>%e-s-disable</code></p>
+        <p><code>%e-s-active</code></p>
+      </div>
+      <h1 class="t-core-title +u-fs-h5x">Font Sizes Config</h1>
+      <h2 class="t-core-title--sub">Font Sizes</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$lh-base:                  1.45;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes helper sizes</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$fs-base:                  em(16);</code></p>
+        <p><code>$fs-lead:                  $fs-base * 1.125;</code></p>
+        <p><code>$fs-half:                  $fs-base / 2;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes huge sizes</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$fs-h1x:                   em(96);</code></p>
+        <p><code>$fs-h2x:                   em(84);</code></p>
+        <p><code>$fs-h3x:                   em(72);</code></p>
+        <p><code>$fs-h4x:                   em(60);</code></p>
+        <p><code>$fs-h5x:                   em(54);</code></p>
+        <p><code>$fs-h6x:                   em(48);</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes heading sizes</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$fs-h1:                    em(32);</code></p>
+        <p><code>$fs-h2:                    em(26);</code></p>
+        <p><code>$fs-h3:                    em(22);</code></p>
+        <p><code>$fs-h4:                    em(20);</code></p>
+        <p><code>$fs-h5:                    em(18);</code></p>
+        <p><code>$fs-h6:                    em(16);</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes small sizes</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$fs-h7:                    em(14);</code></p>
+        <p><code>$fs-h8:                    em(12);</code></p>
+        <p><code>$fs-h9:                    em(10);</code></p>
+        <p><code>$fs-h10:                   em(8);</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes font stacks</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$georgia:                  Georgia, Cambria, "Times New Roman", Times, serif;</code></p>
+        <p><code>$helvetica:                "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;</code></p>
+        <p><code>$lucida-grande:            "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;</code></p>
+        <p><code>$monospace:                "Bitstream Vera Sans Mono", Consolas, Courier, monospace;</code></p>
+        <p><code>$verdana:                  Verdana, Geneva, sans-serif;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes font stacks base & headings</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$ff-base:                  $helvetica;</code></p>
+        <p><code>$ff-heading-base:          $helvetica;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes web/fonts 1</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$ff-family-1:              feather;</code></p>
+        <p><code>$ff-folder-1:              feather;</code></p>
+        <p><code>$ff-name-1:                feather;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes web/fonts 2</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$ff-family-2:              octicons;</code></p>
+        <p><code>$ff-folder-2:              octicons;</code></p>
+        <p><code>$ff-name-2:                octicons;</code></p>
+      </div>
+      <h2 class="t-core-title--sub">Font Sizes web/fonts 3</h2>
+      <div class="t-core-config fonts"> 
+        <p><code>$ff-family-3:              Source Sans Pro;</code></p>
+        <p><code>$ff-folder-3:              SourceSansPro;</code></p>
+        <p><code>$ff-name-3:                SourceSansPro;</code></p>
+      </div>
+      <h1 class="t-core-title +u-fs-h5x">Rounded Config</h1>
+      <h2 class="t-core-title--sub">Rounded</h2>
+      <div class="t-core-config rounded">
+        <p><code>$global-round:   3px!default;</code></p>
+        <p><code>$button-round:   3px!default;</code></p>
+        <p><code>$image-round:    3px!default;</code></p>
+        <p><code>$label-round:    3px!default;</code></p>
+        <p><code>$tabs-round:     3px!default;</code></p>
+        <p><code>$utilities-round: $global-round;</code></p>
+      </div>
+      <h1 class="t-core-title +u-fs-h5x">Spaces Config</h1>
+      <h2 class="t-core-title--sub">Spaces</h2>
+      <div class="t-core-config spaces">
+        <p><code>$space: em(16);</code></p>
+        <p><code>$space-6th: $space / 6;</code></p>
+        <p><code>$space-5th: $space / 5;</code></p>
+        <p><code>$space-4th: $space / 4;</code></p>
+        <p><code>$space-3rd: $space / 3;</code></p>
+        <p><code>$space-half: $space / 2;</code></p>
+        <p><code>$space-1-half: $space * 1.5;</code></p>
+        <p><code>$space-2: $space * 2;</code></p>
+        <p><code>$space-3: $space * 3;</code></p>
+        <p><code>$space-4: $space * 4;</code></p>
+        <p><code>$space-5: $space * 5;</code></p>
+        <p><code>$space-6: $space * 6;</code></p>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src=""><\\/script>')</script>
+    <script src="../../assets/scripts/scripts.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>

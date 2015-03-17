@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Core Utilities Position</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../assets/images/touch/chrome-touch-icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Core CSS">
+    <link rel="apple-touch-icon" href="../assets/images/touch/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="../assets/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <meta name="theme-color" content="#3372DF">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/main.css">
+  </head>
+  <body class="styleguide">
+    <div class="l-core-container container">
+      <h1 class="t-core-title +u-fs-h5x">Position Utilities New</h1>
+      <h2 class="t-core-title--sub">Position What</h2>
+      <div style="height:200px;" class="t-core-utilities position">
+        <div class="+u-p-fixed"><span> <code>+u-p-fixed</code></span><b class="js-close +u-i-p">x</b></div>
+      </div>
+      <div class="t-core-utilities position +u-cf">
+        <div class="+u-p-relative"><span> <code>++u-p-relative'</code></span></div>
+      </div>
+      <div style="height:200px;" class="t-core-utilities position +u-p-relative">
+        <div class="+u-p-absolute"><span> <code>+u-p-absolute</code></span></div>
+      </div>
+      <h2 class="t-core-title--sub">Position Where</h2>
+      <div style="height:300px;" class="t-core-utilities position +u-p-relative">
+        <div class="+u-p-absolute  +u-p-t-0"><span> <code>+u-p-absolute  +u-p-t-0</code></span></div>
+        <div class="+u-p-absolute  +u-p-r-0"><span> <code>+u-p-absolute  +u-p-r-0</code></span></div>
+        <div class="+u-p-absolute  +u-p-b-0"><span> <code>+u-p-absolute  +u-p-b-0</code></span></div>
+        <div class="+u-p-absolute  +u-p-l-0"><span> <code>+u-p-absolute  +u-p-l-0</code></span></div>
+      </div>
+      <h2 class="t-core-title--sub">Position There & There</h2>
+      <div style="height:200px;" class="t-core-utilities position +u-p-relative">
+        <div class="+u-p-absolute  +u-p-t-0  +u-p-r-0"><span><code>+u-p-absolute  +u-p-t-0  +u-p-r-0</code></span></div>
+      </div>
+      <h2 class="t-core-title--sub">Position z-index</h2>
+      <div style="height:300px;" class="t-core-utilities position js-z-index  +u-p-relative">
+        <div style="height:150px; width:300px;" class="+u-p-absolute  +u-p-l-0  +u-z-5  +u-bc-success  +u-p-box  +u-i-m"><span> <code>+u-z-5</code></span></div>
+        <div style="height:150px; width:300px;" class="+u-p-absolute  +u-p-l-0  +u-z-4  +u-bc-info  +u-i-p  +u-i-m-2"><span class="+u-bc-warning"><code>+u-z-4</code></span></div>
+        <div style="height:150px; width:300px;" class="+u-p-absolute  +u-p-l-0  +u-z-3  +u-bc-danger  +u-i-p  +u-i-m-3"><span> <code>+u-z-3</code></span></div>
+        <div style="height:150px; width:300px;" class="+u-p-absolute  +u-p-l-0  +u-z-2  +u-bc-error  +u-i-p  +u-i-m-4"><span> <code>+u-z-2</code></span></div>
+        <div style="height:150px; width:300px;" class="+u-p-absolute  +u-p-l-0  +u-z-1  +u-bc-warning  +u-i-p  +u-i-m-5"><span> <code>+u-z-1</code></span></div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src=""><\\/script>')</script>
+    <script src="../../assets/scripts/scripts.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+</html>
