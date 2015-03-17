@@ -1,0 +1,941 @@
+/* ==========================================================================
+   Simon Styles
+
+   l = layout
+
+   ========================================================================== */
+
+
+
+  body{
+    border-top: 8px solid #CACACA;
+    @include breakpoint($bp-large) {
+      border-top-width: 14px;
+    }
+  }
+
+
+
+    // global container
+    .l-container{
+      @include layout(12 (4em 3em) 100.5em outside);
+      @include container;
+      padding: 0 $space;
+      @include breakpoint($bp-medium) {
+        padding: 0 $space-2;
+      }
+    }
+
+
+
+    // global header
+    .m-header{
+      margin-top: 3em;
+      margin-bottom: 3em;
+      position: relative;
+      @include cf;
+      @include breakpoint($bp-medium) {
+        margin: $space-5 0 $space-4;
+        height: 6.3em;
+      }
+    }
+
+
+      // banner stuff
+      .m-header__logo{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-bottom: 2em;
+        @include breakpoint($bp-medium) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          float: left;
+        }
+      }
+
+
+
+
+      .m-header__nav{
+        display: none;
+
+        ul{
+          background: #F0F0F0;
+          border-radius: $global-round;
+          padding-top: .5em;
+          padding-bottom: .5em;
+
+          li{
+            font-family: $ff-heading-base;
+            font-weight: 500;
+            font-size: 1.25em;
+            text-align: left;
+            line-height: 2.8;
+
+            a{
+              display: block;
+              color: $c-link;
+              padding-left: 1.5em;
+              padding-right: 1.5em;
+
+              &.no-active{
+                text-decoration: line-through;
+                pointer-events: none;
+              }
+            }
+
+            a.current {
+              color: $c-link-hover;
+              cursor: default;
+            }
+
+            a.m-menu__call-out{
+              display: none;
+            }
+          }
+
+        }// ul
+
+
+        @include breakpoint($bp-medium) {
+          display: block;
+          float: right;
+          width: 100%;
+
+          ul{
+            text-align: right;
+            background-color: transparent;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding: 0;
+
+            li{
+              display: inline-block;
+              margin-left: $space-3;
+              font-size: 1.125em;
+
+              a{
+                padding-left: 0;
+                padding-right: 0;
+                color: #878D90;
+
+                &:hover {
+                  color: $c-link;
+                }
+
+                &.current {
+                  color: $c-link-hover;
+                }
+
+                &.m-menu__call-out{
+                  display: block;
+                  background-color: transparent;
+                  font-weight: 500;
+                  border-radius: 50px;
+                  color: $c-white;
+                  line-height: 2.8;
+                  background-color: $c-link-hover;
+                  padding: 0 2.2em;
+                  letter-spacing: .04em;
+
+
+                  &:hover{
+                    color: $c-white;
+                    background-color: $c-link;
+                  }
+
+                  &:visited{
+                    &:hover{
+                      color: $c-white;
+                    }
+                  }
+
+                } // m-menu__call-out
+
+              } // a
+
+            } // li
+
+          } // ul
+
+        } // breakpoint
+
+      } // m-header__nav
+
+
+
+
+      .m-header__hamburger{
+        float: right;
+          @include breakpoint($bp-medium) {
+            display: none;
+          }
+      }
+
+
+
+
+
+      //  section : banner
+      .m-banner__heading{
+        color: $c-link;
+        font-weight: 700;
+        font-size: 2.6em;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.35em;
+
+        @include breakpoint($bp-medium) {
+          font-size: 4.2em;
+          line-height: 1.1;
+          max-width: 960px;
+        }
+
+      }
+
+
+
+
+      @include add(outline) {
+        background-color: $c-link;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: $fs-h7;
+        color: #fff;
+        line-height: 3.0;
+        padding: 0 2.8em;
+        letter-spacing: .04em;
+        font-family: $ff-heading-base;
+
+          &:hover{
+            background-color: $c-link-hover;
+            color: $c-white;
+          }
+
+          &:visited{
+            color: $c-white;
+            &:hover{
+              color: none;
+            }
+          }
+      }
+
+
+
+    // main section all pages
+    .m-main{
+      position: relative;
+    }
+
+
+    // main folio home page
+    .m-folio{
+      > div{
+        margin-bottom: $space-6;
+        @include breakpoint($bp-huge) {
+          margin-bottom: $space-8;
+        }
+      }
+      .m-folio__title{
+        color: $c-link-hover;
+        font-size: 1.4em;
+        font-weight: 500;
+        margin-bottom: $space-quarter;
+      }
+      .m-folio__description{
+        color: #878D90;
+        font-size: 1.2em;
+
+        @include breakpoint($bp-medium) {
+          max-width: 70%;
+        }
+
+        @include breakpoint($bp-large) {
+          max-width: 60%;
+        }
+
+        @include breakpoint($bp-huge) {
+          max-width: 40%;
+        }
+      }
+    }
+
+
+    // home page gallery sections
+    .m-gallery{
+      @include cf;
+      li{
+        margin-bottom: $space-2;
+        @include breakpoint($bp-medium){
+          @include gallery(4);
+          margin-bottom: 0;
+        }
+        a{
+          display: block;
+          padding: 2px;
+          position: relative;
+          &:hover{
+            background-color: $c-white;
+            img{
+              opacity: .75;
+              transition: opacity .15s ease;
+            }
+          }
+        }
+        img{
+          @include reset-mb;
+          background-color: #EDEDED;
+          padding: 2px;
+        }
+        .m-gallery__heading{
+          margin-top: $space-halve;
+          color: #878D90;
+          font-weight: normal;
+          font-size: 1.1em;
+        }
+      }
+    }
+
+
+    // article page
+    .m-aside{
+      margin-top: $space;
+      margin-bottom: $space-4;
+      font-size: 1.125em;
+      a{
+        display: block;
+        padding: $space-1-halve;
+        color: #878D90;
+        border-radius: 3px;
+        border: 2px solid #ededed;
+
+        p:last-child{
+          color: $c-link-hover;
+          @include reset-mb;
+        }
+      }
+    }
+
+
+    // article page
+    .m-article, .m-case-study{
+      margin-bottom: $space-4;
+      max-width: 900px;
+    }
+
+    .m-article__header, .m-case-study__header{
+      .m-article__header-date, .m-case-study__header-date {
+        color: #b7b7b7;
+        font-family: $ff-heading-base;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+      .m-article__header-title, .m-case-study__header-title {
+        font-size: 2.6em;
+        line-height: 1.1;
+        color: $c-link;
+        font-weight: 700;
+        line-height: 1;
+        margin-left: -5px;
+        margin-bottom: .25em;
+
+        @include breakpoint($bp-medium) {
+          font-size: 3.6em;
+        }
+      }
+    }
+
+    .m-article__body, .m-case-study__body{
+      color: #878D90;
+      p{
+        font-size: 1.25em;
+        line-height: 1.6;
+      }
+      a{
+        color: $c-link-hover;
+      }
+      blockquote{
+        margin-bottom: $space-4;
+        margin-top: $space-4;
+        padding: $space-3;
+        position: relative;
+        width: 90%;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          height: 4px;
+          background: $c-s-light-gray;
+          width: 60%;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          height: 4px;
+          background: $c-s-light-gray;
+          width: 60%;
+        }
+        p{
+          font-family: $ff-heading-base;
+          color: $c-link;
+          font-size: 1.6em;
+          margin-bottom: 0;
+          line-height: 1.6;
+          @include reset-mb;
+        }
+        b{
+          margin-top: $space-2;
+          font-size: 1.125em;
+          font-weight: 400;
+        }
+      }
+    }
+
+
+    // about page main
+    .m-about, .m-credit{
+      margin: $space-4 0 $space-6;
+      max-width: 900px;
+      @include cf;
+
+      h2{
+        color: $c-link-hover;
+        margin-top: $space-3;
+        margin-bottom: $space-halve;
+        color: $c-link-hover;
+        font-size: 1.3em;
+        font-weight: normal;
+      }
+
+      p{
+        line-height: 1.6;
+      }
+
+      p, ul li{
+        color: #878D90;
+        font-size: 1.2em;
+        a{
+          text-decoration: underline;
+        }
+      }
+
+      ul li{
+        line-height: 1.7;
+        > ul li{
+          font-size: 1em;
+          list-style: disc;
+        }
+      }
+
+      @include breakpoint($bp-medium){
+        > div{
+          @include span(10);
+        }
+      }
+
+    }
+
+
+    // contact page main
+    .m-contact{
+      margin-top: $space-2;
+      margin-bottom: $space-4;
+      max-width: 900px;
+      height: 200px;
+
+      @include breakpoint($bp-large) {
+        @include span(10);
+      }
+
+      @include breakpoint($bp-large) {
+        margin-bottom: $space-10;
+      }
+      p{
+        color: #878D90;
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+    }
+
+
+    .m-blog__post{
+      margin-bottom: $space-6;
+      max-width: 900px;
+
+      // date
+      .m-blog__post-date{
+        color: #b7b7b7;
+        font-family: $ff-heading-base;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+      }
+
+      //  heading
+      .m-blog__post-title{
+        color: $c-link;
+        font-size: 2.6em;
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.35em;
+
+        a{
+          text-decoration: underline;
+        }
+
+        @include breakpoint($bp-medium) {
+          font-size: 3.6em;
+        }
+
+      }
+
+      .m-blog__post-excerpt{
+        font-size: 1.25em;
+        line-height: 1.6;
+        color: #81888B;
+      }
+    }
+
+  .pagination{
+    p{
+      font-family: $ff-heading-base;
+      font-weight: 700;
+      font-size: 2.6em;
+    }
+  }
+
+  // links page main
+  .m-links{
+    margin: $space-4 0 $space-6;
+    @include cf;
+
+      .m-links--item{
+        margin-bottom: $space-4;
+        @include breakpoint($bp-medium) {
+          @include gallery(4);
+        }
+      }
+
+      .m-links--item-title{
+        color: $c-link-hover;
+        font-size: 1.4em;
+        font-weight: normal;
+        margin-bottom: $space-quarter;
+      }
+
+      ul li, p{
+        color: #878D90;
+        font-size: 1.2em;
+        line-height: 1.6;
+        a{
+          text-decoration: underline;
+        }
+      }
+
+  }
+
+  // article footer including twitter btn
+  .m-article__footer{
+    padding: $space-5 0;
+    border-radius: 3px;
+    margin: $space-5 0 $space-3;
+    border-top: 4px solid #F4F4F4;
+    display: block;
+    p{
+      text-align: center;
+      margin-top: $space-2;
+      @include reset-mb;
+      color: $c-twitter;
+      font-size: 1.3em;
+      margin-bottom: $space-quarter;
+    }
+    .star{
+      display: block;
+      margin: 0 auto;
+    }
+    span.i{
+      position: absolute;
+      z-index: 300;
+      height: 3.2em;
+      width: 3.2em;
+      padding: 10px;
+    }
+    img{
+      width:100%;
+      height:100%;
+    }
+    &:hover{
+      transition: background-color .3s;
+      background-color: $c-twitter;
+      p{
+        color: $c-white;
+      }
+    }
+  }
+
+
+  .m-banner__social{
+    margin-bottom: $space-4;
+    @include breakpoint($bp-large) {
+      margin-bottom: $space-8;
+    }
+  }
+
+  // overright  social contact page
+  .m-banner__social.contact{
+  margin-bottom: 0;
+  }
+
+
+  .m-banner__social, .m-footer__social{
+    margin-top: $space-2;
+    li{
+      display: inline-block;
+      padding: $space;
+      @include breakpoint($bp-large) {
+        margin-right: $space-halve;
+      }
+      span.i{
+        position: absolute;
+        z-index: 300;
+        height: 3.2em;
+        width: 3.2em;
+        padding: 10px;
+      }
+      a{
+        display: block;
+      }
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+
+  // 12 point star footer smaller
+  .m-footer__social{
+    margin-bottom: 0;
+    li{
+      padding: $space-halve;
+      margin-right: $space-halve;
+      span.i{
+        height: 2.4em;
+        width: 2.4em;
+        padding: 10px;
+      }
+    }
+  }
+
+
+  // 12 point star global social icons
+  .star {
+    &,
+    &:before, &:after{
+     height: 3.2em;
+     width: 3.2em;
+     background-color: #cdeab4;
+    }
+
+    &:before, &:after {
+     content:"";
+     position: absolute;
+    }
+
+    &:before{
+       transform: rotate(30deg);
+    }
+
+    &:after {
+       transform: rotate(-30deg);
+    }
+
+    // twitter
+    &.twitter{
+      &,
+      &:after, &:before{
+        background-color: tint($c-twitter,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-twitter;
+        }
+      }
+    }
+
+    &.dribble{
+      &,
+      &:after, &:before{
+        background-color: tint($c-dribble,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-dribble;
+        }
+      }
+    }
+
+    &.codepen{
+      &,
+      &:after, &:before{
+        background-color: tint($c-codepen,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-codepen;
+        }
+      }
+    }
+
+    &.instagram{
+      &,
+      &:after, &:before{
+        background-color: tint($c-instagram,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-instagram;
+        }
+      }
+    }
+
+    &.github{
+      &,
+      &:after, &:before{
+        background-color: tint($c-github,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-github;
+        }
+      }
+    }
+
+    &.gimmebar{
+      &,
+      &:after, &:before{
+        background-color: tint($c-gimmebar,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-gimmebar;
+        }
+      }
+    }
+
+    &.bandcamp{
+      &,
+      &:after, &:before{
+        background-color: tint($c-bandcamp,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-bandcamp;
+        }
+      }
+    }
+
+    &.rdio{
+      &,
+      &:after, &:before{
+        background-color: tint($c-rdio,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-rdio;
+        }
+      }
+    }
+
+    &.foursquare{
+      &,
+      &:after, &:before{
+        background-color: tint($c-foursquare, 50%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-foursquare;
+        }
+      }
+    }
+
+    &.behance{
+      &,
+      &:after, &:before{
+        background-color: tint($c-behance,40%);
+      }
+      &:hover{
+        &,
+        &:after, &:before{
+        background-color: $c-behance;
+        }
+      }
+    }
+  }// end of 12 star point icon
+
+
+
+  // posts on home page
+  .m-thoughts{
+    .m-thoughts__post{
+      margin-bottom: $space-8;
+
+      @include breakpoint($bp-huge) {
+        margin-bottom: $space-4;
+      }
+
+      .m-thoughts__post-image{
+
+        //make a flag object
+        @include breakpoint($bp-huge) {
+          padding-right: $space-3;
+          display: table-cell;
+          vertical-align: middle;
+          > img {
+            display: block;
+            max-width: none;
+          }
+        }
+        img{
+          margin-bottom: $space-halve;
+        }
+        figcaption{
+          color: #878D90;
+          font-size: $fs-base;
+          @include breakpoint($bp-huge) {
+            font-size: 1.125em;
+          }
+          a{
+            color: $c-link-hover;
+          }
+        }
+      }
+
+      .m-thoughts__post-body{
+
+
+
+        //make a flag object
+        @include breakpoint($bp-huge) {
+          width: 100%;
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        h2{
+          max-width: 80%;
+          font-size: 2em;
+          line-height: 1.2;
+          margin-bottom: $space-quarter;
+
+          @include breakpoint($bp-huge) {
+            font-size: 2.6em;
+          }
+
+          a{
+            color: $c-link;
+          }
+
+        }
+
+        p{
+          font-size: 1.125em;
+          @include breakpoint($bp-medium) {
+            max-width: 70%;
+          }
+        @include breakpoint($bp-medium) {
+            max-width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+
+
+  // footer
+  .m-footer{
+    background-color: $c-link;
+    padding: $space-6 0px $space-8;
+    @include breakpoint($bp-huge) {
+      padding-top: $space-6;
+    }
+   }
+
+  // footer nav
+  .m-footer__nav{
+    margin-bottom: $space-6;
+    li{
+      margin-bottom: $space-quarter;
+      a{
+        color: #fff;
+        &.current{
+          color: $c-link;
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  // footer copy
+  .m-footer__copy small, .m-footer__nav li{
+    color: $c-white;
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+
+
+  // footer social but make icons smaller than default banner
+  .m-footer__social{
+    margin-bottom: $space-2;
+    .star{
+      &,
+      &:before, &:after {
+        height: 2.8em;
+        width: 2.8em;
+        background-color: #748BE8 !important;
+      }
+      &:hover{
+        background-color: #EAEEFC !important;
+        &:before, &:after {
+          background-color: #EAEEFC !important;
+        }
+      }
+    }
+    li span.i{
+      height: 2.8em;
+      width: 2.8em;
+    }
+    svg {
+      width: 100%;
+      height:100%;
+      path{
+        fill: $c-link;
+      }
+    }
+  }
+
+
+  .m-footer__copy small{
+    font-family: $ff-heading-base;
+    font-size: 1.075em;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: $space-quarter;
+    a{
+      text-decoration: underline;
+      color: #fff;
+    }
+  }

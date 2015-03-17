@@ -1,0 +1,53 @@
+$use-objects-sprite:  true !default;
+
+@if $use-objects-sprite == true{
+  /* ==========================================================================
+   Object - Sprite
+
+   * make spirte positions in site styles
+
+   css:
+   -----
+   .o-sprite{
+      width: 16px;
+      height:16px;
+      background-image:url();
+   }
+
+   @include add(red-square)    { background-position: 0 0; }
+   @include add(blue-circle)   { background-position: -16px 0; }
+   @include add(orange-sqaure) { background-position: -16px -16px; }
+   @include add(green-circle)  { background-position: 0 -16px; }
+
+
+   ========================================================================== */
+
+  // object
+  @include object(o-sprite) {
+    position:relative;
+    top:-1px;
+    display:inline-block;
+    overflow:hidden;
+    vertical-align:middle;
+    text-align:center;
+    font-weight:normal;
+    font-style:normal;
+    line-height:1;
+    zoom:1;
+    *text-indent:-9999px;
+
+    // make spirte image + width & size in site styles
+    // background-image:;
+    // width:;
+    // height:;
+
+    &:before{
+      display:block;
+      width:0;
+      height:100%;
+      content:"";
+    }
+
+  }
+
+}//endif

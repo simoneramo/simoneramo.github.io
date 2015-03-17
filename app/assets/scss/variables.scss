@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+  // normailze legacy
+  $legacy_browser_support:                false;
+
+
+  // debug
+  $use-debug-outlines:                    false;
+  $use-debug-media-query:                 false;
+  $use-debug-issues:                      false;
+
+
+  // reset
+  $use-reset-general:                     true;
+  $use-reset-myers:                       false;
+
+
+  // base
+  $use-base-root:                         true;
+  $use-base-border-box:                   true;
+  $use-base-selection:                    true;
+  $use-base-global-mb:                    true;
+  $use-base-imports:                      true;
+  $use-base-links:                        true;
+  $use-base-text:                         true;
+  $use-base-lists:                        true;
+  $use-base-quotes:                       true;
+  $use-base-media:                        true;
+  $use-base-code:                         true;
+  $use-base-forms:                        true;
+
+
+  // utilities
+  $use-utilities-island:                  true;
+  $use-utilities-widths:                  true;
+  $use-utilities-extends:                 true;
+  $use-utilities-spaces:                  true;
+  $use-utilities-display:                 true;
+  $use-utilities-print:                   true;
+  $use-utilities-text:                    true;
+  $use-utilities-font-styles:             true;
+  $use-utilities-font-sizes:              true;
+  $use-utilities-font-weights:            true;
+  $use-utilities-mixins:                  true;
+  $use-utilities-overflow:                true;
+  $use-utilities-floats:                  true;
+  $use-utilities-position:                true;
+  $use-utilities-rounded:                 true;
+  $use-utilities-states:                  true;
+  $use-utilities-vertical-align:          true;
+  $use-utilities-white-space:             true;
+  $use-utilities-colours:                 true;
+
+  // objects
+  $use-objects-code:                      true;
+  $use-objects-forms:                     true;
+  $use-objects-images:                    true;
+  $use-objects-rules:                     true;
+  $use-objects-tables:                    true;
+  $use-objects-island:                    true;
+  $use-objects-blockquote:                true;
+  $use-objects-notify:                    true;
+  $use-objects-labels:                    true;
+  $use-objects-buttons:                   true;
+  $use-objects-buttons-groups:            true;
+  $use-objects-columns:                   true;
+  $use-objects-icon-fonts:                true;
+  $use-objects-icon-text:                 true;
+  $use-objects-link-complex:              true;
+  $use-objects-lists:                     true;
+  $use-objects-sprite:                    true;
+  $use-objects-block-list:                true;
+  $use-objects-thumbnail:                 true;
+  $use-objects-breadcrumb:                true;
+  $use-objects-flyout:                    true;
+  $use-objects-matrix:                    true;
+  $use-objects-media:                     true;
+  $use-objects-menu:                      true;
+  $use-objects-nav:                       true;
+  $use-objects-options:                   true;
+  $use-objects-pagination:                true;
+  $use-objects-progress-bars:             true;
+  $use-objects-split:                     true;
+  $use-objects-loaders:                   true;
+  $use-objects-stats:                     true;
+  $use-objects-this-or-this:              true;
+  $use-objects-flag:                      true;
+
+
+  // delete or add icons folder
+  $use-icons-feather:                     true;
+  $use-icons-octicons:                    true;
+
+
+  // modules
+  $use-modules-social-gallery:            true;
+  $use-modules-owl-carousel:              true;
+  $use-modules-fit-text:                  true;
+  $use-modules-fit-vids:                  true;
+  $use-modules-fluid-box:                 true;
+
+
+  // trumps
+  $use-trumps-island:                     true;
+  $use-trumps-widths:                     true;
+  $use-trumps-spaces:                     true;
+  $use-trumps-colours:                    true;

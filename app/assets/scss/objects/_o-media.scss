@@ -1,0 +1,35 @@
+$use-objects-media: true !default;
+
+@if $use-objects-media == true{
+  /* ==========================================================================
+   Object - Media
+   ========================================================================== */
+
+  // object
+  @include object(o-media) {
+    @include cf;
+    display: block;
+
+    // element
+    @include element(image) {
+      float: left;
+      padding-right: $space-2;
+    }
+
+    // element
+    @include element(body){
+      overflow: hidden;
+    }
+
+    // modifier
+    @include modifier(right) {
+      .o-media__image{
+        float:right;
+        padding-right: 0;
+        padding-left: $space-2;
+      }
+    }
+
+  }
+
+}//endif

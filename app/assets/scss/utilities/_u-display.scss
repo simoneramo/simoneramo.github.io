@@ -1,0 +1,15 @@
+$use-utilities-display:  true !default;
+
+@if $use-utilities-display == true{
+/* ==========================================================================
+   Utilities - Displays
+   ========================================================================== */
+
+  @include add(u-d-block)        { display:block; }
+  @include add(u-d-inline)       { display:inline; }
+  @include add(u-d-inline-block) { display:inline-block; }
+  @include add(u-d-table)        { display:table; }
+  @include add(u-d-table-cell)   { display:table-cell; }
+  @include add(u-d-flex)         { display:flex; }
+
+}//endif

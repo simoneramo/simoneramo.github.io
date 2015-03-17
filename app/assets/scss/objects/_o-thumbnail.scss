@@ -1,0 +1,20 @@
+$use-objects-thumbnail: true !default;
+
+@if $use-objects-thumbnail == true{
+/* ==========================================================================
+   Ojects - Thumbnail
+   ========================================================================== */
+
+  // object
+  @include object(o-thumb) {
+
+    // element
+    @include element(item) {
+      display: block;
+      padding: $space-halve;
+      border: 1px solid $c-object;
+    }
+
+  }
+
+}//endif

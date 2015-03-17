@@ -1,0 +1,31 @@
+$use-objects-notify: true !default;
+
+@if $use-objects-notify == true or $use-objects-forms == true{
+/* ==========================================================================
+   Objects - Notify
+   ========================================================================== */
+
+  // object
+  @include object(o-notify) {
+    background-color: $c-object;
+    padding: $space;
+
+    @if $use-base-global-mb == true{
+      @include mb;
+
+      p:last-child{
+        @include reset-mb;
+      }
+    }
+
+    // modifier
+    @include modifier(success)    { @extend %e-bc-success; }
+    @include modifier(info)       { @extend %e-bc-info; }
+    @include modifier(warning)    { @extend %e-bc-warning; }
+    @include modifier(danger)     { @extend %e-bc-danger; }
+    @include modifier(error)      { @extend %e-bc-error; }
+    @include modifier(disable)    { @extend %e-s-disable; }
+
+  }
+
+}//endif

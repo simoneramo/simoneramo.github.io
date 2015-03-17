@@ -1,0 +1,26 @@
+$use-objects-labels:	true !default;
+
+@if $use-objects-labels == true{
+/* ==========================================================================
+   Object - Labels
+   ========================================================================== */
+
+	@include object(o-label){
+		display:inline-block;
+		text-align:center;
+		background-color: $c-object;
+		padding-left:$space;
+		padding-right:$space;
+
+		// modifier
+		@include modifier(rounded) {
+			border-radius:$label-round;
+		}
+
+		// modifier
+		@include modifier(pill) {
+			border-radius:100px;
+		}
+	}
+
+}//endif
