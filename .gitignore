@@ -7,5 +7,6 @@ _public/
 app/assets/scss/objects/log.md
 npm-debug.log
 
-app/thoughts/
-app/case-studies/
+app/_thoughts
+app/_contact
+app/_case-studies
