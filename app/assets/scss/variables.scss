@@ -22,88 +22,90 @@
   $use-base-border-box:                   true;
   $use-base-selection:                    true;
   $use-base-global-mb:                    true;
-  $use-base-imports:                      true;
+  $use-base-imports:                      false;
   $use-base-links:                        true;
   $use-base-text:                         true;
   $use-base-lists:                        true;
   $use-base-quotes:                       true;
   $use-base-media:                        true;
   $use-base-code:                         true;
-  $use-base-forms:                        true;
+  $use-base-forms:                        false;
 
 
   // utilities
-  $use-utilities-island:                  true;
-  $use-utilities-widths:                  true;
+  $use-utilities-island:                  false;
+  $use-utilities-widths:                  false;
   $use-utilities-extends:                 true;
-  $use-utilities-spaces:                  true;
-  $use-utilities-display:                 true;
+  $use-utilities-spaces:                  false;
+  $use-utilities-display:                 false;
   $use-utilities-print:                   true;
-  $use-utilities-text:                    true;
-  $use-utilities-font-styles:             true;
-  $use-utilities-font-sizes:              true;
-  $use-utilities-font-weights:            true;
+  $use-utilities-text:                    false;
+  $use-utilities-font-styles:             false;
+  $use-utilities-font-sizes:              false;
+  $use-utilities-font-weights:            false;
   $use-utilities-mixins:                  true;
-  $use-utilities-overflow:                true;
-  $use-utilities-floats:                  true;
-  $use-utilities-position:                true;
+  $use-utilities-overflow:                false;
+  $use-utilities-floats:                  false;
+  $use-utilities-position:                false;
   $use-utilities-rounded:                 true;
   $use-utilities-states:                  true;
-  $use-utilities-vertical-align:          true;
-  $use-utilities-white-space:             true;
-  $use-utilities-colours:                 true;
+  $use-utilities-vertical-align:          false;
+  $use-utilities-white-space:             false;
+  $use-utilities-colours:                 false;
+
 
   // objects
-  $use-objects-code:                      true;
-  $use-objects-forms:                     true;
-  $use-objects-images:                    true;
-  $use-objects-rules:                     true;
-  $use-objects-tables:                    true;
-  $use-objects-island:                    true;
+  $use-objects-block-list:                false;
   $use-objects-blockquote:                true;
-  $use-objects-notify:                    true;
-  $use-objects-labels:                    true;
-  $use-objects-buttons:                   true;
-  $use-objects-buttons-groups:            true;
-  $use-objects-columns:                   true;
-  $use-objects-icon-fonts:                true;
-  $use-objects-icon-text:                 true;
-  $use-objects-link-complex:              true;
-  $use-objects-lists:                     true;
-  $use-objects-sprite:                    true;
-  $use-objects-block-list:                true;
-  $use-objects-thumbnail:                 true;
   $use-objects-breadcrumb:                true;
-  $use-objects-flyout:                    true;
-  $use-objects-matrix:                    true;
+  $use-objects-buttons-groups:            false;
+  $use-objects-buttons:                   true;
+  $use-objects-code:                      false;
+  $use-objects-columns:                   false;
+  $use-objects-flag:                      true;
+  $use-objects-flyout:                    false;
+  $use-objects-forms:                     false;
+  $use-objects-icon-fonts:                false;
+  $use-objects-icon-text:                 false;
+  $use-objects-images:                    true;
+  $use-objects-island:                    true;
+  $use-objects-labels:                    false;
+  $use-objects-link-complex:              false;
+  $use-objects-lists:                     true;
+  $use-objects-loaders:                   false;
+  $use-objects-matrix:                    false;
   $use-objects-media:                     true;
   $use-objects-menu:                      true;
   $use-objects-nav:                       true;
-  $use-objects-options:                   true;
+  $use-objects-notify:                    false;
+  $use-objects-options:                   false;
   $use-objects-pagination:                true;
-  $use-objects-progress-bars:             true;
-  $use-objects-split:                     true;
-  $use-objects-loaders:                   true;
-  $use-objects-stats:                     true;
-  $use-objects-this-or-this:              true;
-  $use-objects-flag:                      true;
+  $use-objects-progress-bars:             false;
+  $use-objects-rules:                     false;
+  $use-objects-split:                     false;
+  $use-objects-sprite:                    false;
+  $use-objects-stats:                     false;
+  $use-objects-tables:                    false;
+  $use-objects-tabs:                      false;
+  $use-objects-this-or-this:              false;
+  $use-objects-thumbnail:                 false;
 
 
   // delete or add icons folder
-  $use-icons-feather:                     true;
-  $use-icons-octicons:                    true;
+  $use-icons-feather:                     false;
+  $use-icons-octicons:                    false;
 
 
   // modules
-  $use-modules-social-gallery:            true;
-  $use-modules-owl-carousel:              true;
+  $use-modules-social-gallery:            false;
+  $use-modules-owl-carousel:              false;
   $use-modules-fit-text:                  true;
   $use-modules-fit-vids:                  true;
-  $use-modules-fluid-box:                 true;
+  $use-modules-fluid-box:                 false;
 
 
   // trumps
-  $use-trumps-island:                     true;
-  $use-trumps-widths:                     true;
-  $use-trumps-spaces:                     true;
-  $use-trumps-colours:                    true;
+  $use-trumps-island:                     false;
+  $use-trumps-widths:                     false;
+  $use-trumps-spaces:                     false;
+  $use-trumps-colours:                    false;
