@@ -133,6 +133,9 @@
       [
         'app/**/**/*.jade',                                                 // Jade Directory
         '!app/_partials/**/*.jade',                                      // Exclude _partials directory from compiling in /app - app/_partials/**/*.html
+        '!app/_thoughts/**/*.jade',
+        '!app/_contact/**/*.jade',
+        '!app/_case-studies/**/*.jade',
       ])
     .pipe($.jade({                                                     // Use gulp-jade
       pretty: false                                                    // All Jade Options are available - http://jade-lang.com/api/
