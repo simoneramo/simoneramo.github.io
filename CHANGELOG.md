@@ -1,7 +1,7 @@
-Core SCSS changelog
+Simon Eramo Beta
 ===========================
 
-0.1
+0.0.1
 ---
 
 Initial release

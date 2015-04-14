@@ -100,7 +100,7 @@
 
 
         @include breakpoint($bp-medium) {
-          display: block;
+          display: block!important;
           float: right;
           width: 100%;
 
@@ -270,7 +270,6 @@
         margin-bottom: $space-2;
         @include breakpoint($bp-medium){
           @include gallery(4);
-          margin-bottom: 0;
         }
         a{
           display: block;
