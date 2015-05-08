@@ -66,9 +66,47 @@ html(lang='en')
 
       main.m-main
         .m-folio
+          .m-folio__front-end
+            h2.m-folio__title Commercial Work
+            ul.m-gallery(class='+u-unstyled')
+              li
+                a(href='https://www.clearcomplexions.com.au/' title='Clear Complextions Site')
+                  img(src='assets/images/site/fed-cc-4x3.png')
+                  h3.m-gallery__heading Clear Complextions
+              li
+                a(href='http://www.tastetrails.com.au/' title='Tasete Trails Site')
+                  img(src='assets/images/site/fed-tt-4x3.png')
+                  h3.m-gallery__heading Taste Trails
+              li
+                a(href='http://pinkrewards.com.au/' title='Pink Rewards Site')
+                  img(src='assets/images/site/fed-pink-4x3.png')
+                  h3.m-gallery__heading Pink Rewards
+              li
+                a(href='http://www.centralsnowsports.com.au/' title='Central Snowsports')
+                  img(src='assets/images/site/snow-800x600.jpg')
+                  h3.m-gallery__heading Central Snowsports
+              li
+                a(href='http://www.tiffinyhall.com.au/' title='Tiffiny Hall')
+                  img(src='assets/images/site/tiff-800x600.jpg')
+                  h3.m-gallery__heading Tiffiny Hall
+              li
+                a(href='http://judwimhurst.com/' title='Jud Wimhurst')
+                  img(src='assets/images/site/judwimhurst-800x600.jpg')
+                  h3.m-gallery__heading Jud Wimhurst
+              li
+                a(href='http://www.melbournegeeks.com/' title='Pink Rewards Site')
+                  img(src='assets/images/site/geeks-800x600.jpg')
+                  h3.m-gallery__heading Melbourne Geeks Night
+              li
+                a(href='https://www.draculas.com.au/' title='Pink Rewards Site')
+                  img(src='assets/images/site/draculas-800x600.jpg')
+                  h3.m-gallery__heading Pink Rewards
+              li
+                a(href='http://xproduct.com.au/' title='xproduct')
+                  img(src='assets/images/site/xproduct-800x600.jpg')
+                  h3.m-gallery__heading Xproduct
           .m-folio__work
             h2.m-folio__title User Interface Design
-            //- p.m-folio__description
             ul.m-gallery(class='+u-unstyled')
               li
                 a(href='https://dribbble.com/simoneramo/projects/210222-Fat-Bold-UI-Elements' title='Fat Bold UI Kit')
@@ -118,25 +156,8 @@ html(lang='en')
                 a(href='https://marvelapp.com/5dc187', title='')
                   img(src='assets/images/site/ux-gatherer-app-4x3.png')
                   h3.m-gallery__heading Gatherer Application
-          .m-folio__front-end
-            h2.m-folio__title Front End Development
-            p.m-folio__description Some recently live sites that i helped or built the front end in on.
-            ul.m-gallery(class='+u-unstyled')
-              li
-                a(href='https://www.clearcomplexions.com.au/' title='Clear Complextions Site')
-                  img(src='assets/images/site/fed-cc-4x3.png')
-                  h3.m-gallery__heading Clear Complextions
-              li
-                a(href='http://www.tastetrails.com.au/' title='Tasete Trails Site')
-                  img(src='assets/images/site/fed-tt-4x3.png')
-                  h3.m-gallery__heading Taste Trails
-              li
-                a(href='http://pinkrewards.com.au/' title='Pink Rewards Site')
-                  img(src='assets/images/site/fed-pink-4x3.png')
-                  h3.m-gallery__heading Pink Rewards
           .m-folio__projects
             h2.m-folio__title Personal Projects
-            //- p.m-folio__description
             ul.m-gallery(class='+u-unstyled')
               li
                 a(href='https://github.com/simoneramo/simple' title='Simple Boilerplate')
@@ -234,4 +255,4 @@ html(lang='en')
       window.jQuery || document.write('<script src=""><\\/script>')
     script(src='/assets/scripts/scripts.min.js')
 
-    include _partials/site/analytics
+    //- include _partials/site/analytics
